@@ -5,7 +5,7 @@ import { Rocket, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-coffee-brown-900 text-coffee-brown-100">
+    <footer className="bg-coffee-brown-900 text-coffee-brown-100 dark:bg-coffee-brown-950 border-t border-coffee-brown-800 dark:border-coffee-brown-800">
       <div className="container mx-auto px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
