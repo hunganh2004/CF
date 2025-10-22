@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { mockProducts } from '../data/mockData';
 import MenuItemCard from '../components/MenuItemCard';
 import Button from '../components/Button';
-import { Gift, Ticket, Coffee } from 'lucide-react';
+import { Gift, Ticket, MapPin } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   // Get first 3 items as featured items
@@ -18,7 +19,7 @@ const HomePage: React.FC = () => {
       >
         <div className="absolute inset-0 bg-black/50 z-0"></div>
         <div className="relative z-10">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Chào mừng đến Ocean Brew Cafe</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Chào mừng đến Rocket Global</h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
               Trải nghiệm cà phê và bánh ngọt hảo hạng trong không gian ấm cúng, đậm chất đại dương.
             </p>
@@ -49,24 +50,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
       
-      {/* Our Story Section */}
-      <section className="bg-white p-8 md:p-10 rounded-lg shadow-md">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div>
-                <h2 className="text-3xl font-bold mb-4 text-coffee-brown-900">Câu Chuyện Của Chúng Tôi</h2>
-                <p className="text-coffee-brown-700 mb-6 leading-relaxed">
-                    Tại Ocean Brew, chúng tôi tin rằng mỗi tách cà phê là một chuyến du hành. Từ những hạt cà phê được lựa chọn kỹ lưỡng đến kỹ thuật pha chế điêu luyện của các Barista, tất cả đều nhằm mang đến cho bạn một trải nghiệm trọn vẹn và đáng nhớ.
-                </p>
-                <Link to="/about">
-                  <Button variant="secondary">Tìm hiểu thêm</Button>
-                </Link>
-            </div>
-            <div className="hidden md:block">
-                <img src="https://picsum.photos/seed/barista/500/350" alt="Barista making coffee" className="rounded-lg shadow-lg" />
-            </div>
-        </div>
-      </section>
-
       {/* Featured Items Section */}
       <section>
         <h2 className="text-3xl font-bold text-center mb-8 text-coffee-brown-900">Khám Phá Món Đặc Trưng</h2>
@@ -79,6 +62,37 @@ const HomePage: React.FC = () => {
             <Link to="/menu">
                 <Button size="lg" variant="secondary">Xem Toàn Bộ Thực Đơn</Button>
             </Link>
+        </div>
+      </section>
+
+      {/* Visit Us Section */}
+      <section className="bg-white p-8 md:p-10 rounded-lg shadow-md">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h2 className="text-3xl font-bold mb-4 text-coffee-brown-900">Ghé Thăm Chúng Tôi</h2>
+                <div className="flex items-start gap-4 text-coffee-brown-700 mb-6">
+                    <MapPin size={24} className="text-ocean-blue-600 mt-1 flex-shrink-0" />
+                    <p className="leading-relaxed">
+                        <strong>Địa chỉ:</strong> 123 Bờ Biển, TP. Đại Dương
+                        <br />
+                        Chúng tôi mong được đón tiếp bạn!
+                    </p>
+                </div>
+                <Link to="/contact">
+                  <Button variant="primary">Xem Bản Đồ & Liên Hệ</Button>
+                </Link>
+            </div>
+            <div className="rounded-lg shadow-lg overflow-hidden h-64">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.447998995393!2d106.69532581474939!3d10.776953192320777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a3d5e3e2d%3A0x3f3d3d5e3e2d!2sNh%C3%A0%20h%C3%A1t%20Th%C3%A0nh%20ph%E1%BB%91%20H%E1%BB%93%20Ch%C3%AD%20Minh!5e0!3m2!1svi!2s!4v1628582498205!5m2!1svi!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={true}
+                    loading="lazy"
+                    title="Google Maps Location"
+                ></iframe>
+            </div>
         </div>
       </section>
     </div>

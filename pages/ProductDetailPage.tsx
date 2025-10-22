@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { mockProducts } from '../data/mockData';
-import { useCart } from '../hooks/useCart';
-import { useToast } from '../hooks/useToast';
 import Button from '../components/Button';
-import { Plus, Minus, ChevronLeft } from 'lucide-react';
+import { ChevronLeft } from 'lucide-react';
 
 const ProductDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const product = mockProducts.find(p => p.id === parseInt(id || ''));
   
-  const [quantity, setQuantity] = useState(1);
-  const { addItem } = useCart();
-  const { addToast } = useToast();
-
   if (!product) {
     return (
         <div className="text-center py-16">
@@ -24,15 +19,6 @@ const ProductDetailPage: React.FC = () => {
         </div>
     );
   }
-
-  const handleAddToCart = () => {
-    addItem(product, quantity);
-    addToast(`${quantity} ${product.name} đã được thêm vào giỏ!`);
-    setQuantity(1);
-  };
-
-  const incrementQuantity = () => setQuantity(prev => prev + 1);
-  const decrementQuantity = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -51,15 +37,6 @@ const ProductDetailPage: React.FC = () => {
                 <span className="text-2xl md:text-3xl font-bold text-ocean-blue-700 mb-6">
                     {product.price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}
                 </span>
-                <div className="flex items-center gap-4 mb-6">
-                    <span className="font-semibold">Số lượng:</span>
-                    <div className="flex items-center border rounded-lg">
-                        <button onClick={decrementQuantity} className="p-2 hover:bg-gray-100 rounded-l-lg"><Minus size={16} /></button>
-                        <span className="w-12 text-center font-bold text-lg">{quantity}</span>
-                        <button onClick={incrementQuantity} className="p-2 hover:bg-gray-100 rounded-r-lg"><Plus size={16} /></button>
-                    </div>
-                </div>
-                <Button onClick={handleAddToCart} size="lg">Thêm vào giỏ</Button>
             </div>
         </div>
     </div>

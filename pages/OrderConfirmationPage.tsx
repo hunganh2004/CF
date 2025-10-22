@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import Button from '../components/Button';
@@ -16,7 +15,7 @@ const OrderConfirmationPage: React.FC = () => {
         </div>
         <h1 className="text-3xl font-bold text-ocean-blue-700 mb-2">Đặt Hàng Thành Công!</h1>
         <p className="text-coffee-brown-700 mb-6">
-          Cảm ơn bạn đã tin tưởng Ocean Brew Cafe. Đơn hàng của bạn đang được chuẩn bị.
+          Cảm ơn bạn đã tin tưởng Rocket Global. Đơn hàng của bạn đang được chuẩn bị.
         </p>
 
         {orderDetails && (

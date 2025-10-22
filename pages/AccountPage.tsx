@@ -28,7 +28,7 @@ const AccountPage: React.FC = () => {
             <div className="flex flex-col items-center text-center mb-6">
                 <img src="https://picsum.photos/seed/avatar/128/128" alt="User Avatar" className="w-24 h-24 rounded-full mb-4" />
                 <h2 className="text-xl font-bold">Khách Hàng Thân Thiết</h2>
-                <p className="text-sm text-coffee-brown-600">customer@oceanbrew.com</p>
+                <p className="text-sm text-coffee-brown-600">customer@rocketglobal.com</p>
             </div>
             <nav className="flex flex-col space-y-2">
                 <a href="#" className="flex items-center gap-3 p-3 rounded-lg bg-ocean-blue-100 text-ocean-blue-700 font-semibold">
