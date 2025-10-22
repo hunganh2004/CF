@@ -4,10 +4,10 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-white dark:bg-coffee-brown-900 p-8 md:p-12 rounded-lg shadow-xl">
+    <div className="bg-white dark:bg-neutral-gray-900 p-8 md:p-12 rounded-lg shadow-xl">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-center text-ocean-blue-700 mb-6">Liên Hệ & Vị Trí</h1>
-        <p className="text-center text-lg text-coffee-brown-700 dark:text-coffee-brown-300 mb-12">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center text-sunset-orange-700 mb-6">Liên Hệ & Vị Trí</h1>
+        <p className="text-center text-lg text-neutral-gray-700 dark:text-neutral-gray-300 mb-12">
           Chúng tôi rất mong được gặp bạn. Hãy ghé thăm hoặc liên hệ với chúng tôi!
         </p>
 
@@ -15,37 +15,37 @@ const ContactPage: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl font-bold text-coffee-brown-900 dark:text-coffee-brown-100 mb-4">Thông Tin Liên Hệ</h2>
+              <h2 className="text-2xl font-bold text-neutral-gray-900 dark:text-neutral-gray-100 mb-4">Thông Tin Liên Hệ</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="text-ocean-blue-600 dark:text-ocean-blue-400 mt-1 flex-shrink-0" size={24} />
+                  <MapPin className="text-sunset-orange-600 dark:text-sunset-orange-400 mt-1 flex-shrink-0" size={24} />
                   <div>
-                    <h3 className="font-semibold dark:text-coffee-brown-100">Địa chỉ</h3>
-                    <p className="text-coffee-brown-700 dark:text-coffee-brown-300">123 Bờ Biển, TP. Đại Dương</p>
+                    <h3 className="font-semibold dark:text-neutral-gray-100">Địa chỉ</h3>
+                    <p className="text-neutral-gray-700 dark:text-neutral-gray-300">123 Bờ Biển, TP. Đại Dương</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Phone className="text-ocean-blue-600 dark:text-ocean-blue-400 mt-1 flex-shrink-0" size={24} />
+                  <Phone className="text-sunset-orange-600 dark:text-sunset-orange-400 mt-1 flex-shrink-0" size={24} />
                   <div>
-                    <h3 className="font-semibold dark:text-coffee-brown-100">Điện thoại</h3>
-                    <p className="text-coffee-brown-700 dark:text-coffee-brown-300">(012) 345-6789</p>
+                    <h3 className="font-semibold dark:text-neutral-gray-100">Điện thoại</h3>
+                    <p className="text-neutral-gray-700 dark:text-neutral-gray-300">(012) 345-6789</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Mail className="text-ocean-blue-600 dark:text-ocean-blue-400 mt-1 flex-shrink-0" size={24} />
+                  <Mail className="text-sunset-orange-600 dark:text-sunset-orange-400 mt-1 flex-shrink-0" size={24} />
                   <div>
-                    <h3 className="font-semibold dark:text-coffee-brown-100">Email</h3>
-                    <p className="text-coffee-brown-700 dark:text-coffee-brown-300">contact@rocketglobal.com</p>
+                    <h3 className="font-semibold dark:text-neutral-gray-100">Email</h3>
+                    <p className="text-neutral-gray-700 dark:text-neutral-gray-300">contact@rocketglobal.com</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-coffee-brown-900 dark:text-coffee-brown-100 mb-4">Giờ Mở Cửa</h2>
+              <h2 className="text-2xl font-bold text-neutral-gray-900 dark:text-neutral-gray-100 mb-4">Giờ Mở Cửa</h2>
                <div className="flex items-start gap-4">
-                  <Clock className="text-ocean-blue-600 dark:text-ocean-blue-400 mt-1 flex-shrink-0" size={24} />
-                   <div className="text-coffee-brown-700 dark:text-coffee-brown-300">
+                  <Clock className="text-sunset-orange-600 dark:text-sunset-orange-400 mt-1 flex-shrink-0" size={24} />
+                   <div className="text-neutral-gray-700 dark:text-neutral-gray-300">
                     <p><span className="font-semibold">Thứ Hai - Thứ Sáu:</span> 7:00 - 21:00</p>
                     <p><span className="font-semibold">Thứ Bảy - Chủ Nhật:</span> 8:00 - 22:00</p>
                   </div>

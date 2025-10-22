@@ -104,20 +104,20 @@ const HomePage: React.FC = () => {
 
         {/* Special Offers Section */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-10 text-coffee-brown-900 dark:text-coffee-brown-100 animate-fade-in-up">Ưu đãi đặc biệt</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-neutral-gray-900 dark:text-neutral-gray-100 animate-fade-in-up">Ưu đãi đặc biệt</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-              <div className="bg-ocean-blue-100 dark:bg-ocean-blue-900/50 p-6 rounded-lg shadow-sm flex items-center gap-6 group transform hover:scale-105 hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.2s' }}>
-                  <Ticket size={48} className="text-ocean-blue-600 dark:text-ocean-blue-400 flex-shrink-0 animate-icon-bounce"/>
+              <div className="bg-sunset-orange-100 dark:bg-sunset-orange-900/30 p-6 rounded-lg shadow-sm flex items-center gap-6 group transform hover:scale-105 hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.2s' }}>
+                  <Ticket size={48} className="text-sunset-orange-600 dark:text-sunset-orange-400 flex-shrink-0 animate-icon-bounce"/>
                   <div>
-                      <h3 className="text-xl font-bold text-ocean-blue-800 dark:text-ocean-blue-200">Giảm 20% cho món mới</h3>
-                      <p className="text-coffee-brown-700 dark:text-coffee-brown-300 mt-1">Thử ngay 'Latte San Hô' và nhận ưu đãi đặc biệt trong tuần này!</p>
+                      <h3 className="text-xl font-bold text-sunset-orange-800 dark:text-sunset-orange-200">Giảm 20% cho món mới</h3>
+                      <p className="text-neutral-gray-700 dark:text-neutral-gray-300 mt-1">Thử ngay 'Latte San Hô' và nhận ưu đãi đặc biệt trong tuần này!</p>
                   </div>
               </div>
-              <div className="bg-ocean-blue-100 dark:bg-ocean-blue-900/50 p-6 rounded-lg shadow-sm flex items-center gap-6 group transform hover:scale-105 hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.4s' }}>
-                  <Gift size={48} className="text-ocean-blue-600 dark:text-ocean-blue-400 flex-shrink-0 animate-icon-bounce"/>
+              <div className="bg-sage-green-100 dark:bg-sage-green-900/30 p-6 rounded-lg shadow-sm flex items-center gap-6 group transform hover:scale-105 hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.4s' }}>
+                  <Gift size={48} className="text-sage-green-600 dark:text-sage-green-400 flex-shrink-0 animate-icon-bounce"/>
                   <div>
-                      <h3 className="text-xl font-bold text-ocean-blue-800 dark:text-ocean-blue-200">Combo Buổi Sáng</h3>
-                      <p className="text-coffee-brown-700 dark:text-coffee-brown-300 mt-1">Tiết kiệm hơn với combo 1 Cà Phê + 1 Bánh Ngọt chỉ với 59.000đ.</p>
+                      <h3 className="text-xl font-bold text-sage-green-800 dark:text-sage-green-200">Combo Buổi Sáng</h3>
+                      <p className="text-neutral-gray-700 dark:text-neutral-gray-300 mt-1">Tiết kiệm hơn với combo 1 Cà Phê + 1 Bánh Ngọt chỉ với 59.000đ.</p>
                   </div>
               </div>
           </div>
@@ -125,7 +125,7 @@ const HomePage: React.FC = () => {
         
         {/* Featured Items Section */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-10 text-coffee-brown-900 dark:text-coffee-brown-100 animate-fade-in-up">Khám Phá Món Đặc Trưng</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-neutral-gray-900 dark:text-neutral-gray-100 animate-fade-in-up">Khám Phá Món Đặc Trưng</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredItems.map((product, index) => (
               <div key={product.id} className="animate-scale-in" style={{ animationDelay: `${index * 150}ms` }}>
@@ -141,11 +141,11 @@ const HomePage: React.FC = () => {
         </section>
 
         {/* Our Story Section */}
-        <section className="bg-white dark:bg-coffee-brown-900 p-8 md:p-12 rounded-lg shadow-md">
+        <section className="bg-white dark:bg-neutral-gray-900 p-8 md:p-12 rounded-lg shadow-md">
             <div className="grid md:grid-cols-2 gap-10 items-center">
                 <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                    <h2 className="text-3xl font-bold mb-4 text-coffee-brown-900 dark:text-coffee-brown-100">Câu Chuyện Của Chúng Tôi</h2>
-                    <p className="text-coffee-brown-700 dark:text-coffee-brown-300 leading-relaxed mb-6">
+                    <h2 className="text-3xl font-bold mb-4 text-neutral-gray-900 dark:text-neutral-gray-100">Câu Chuyện Của Chúng Tôi</h2>
+                    <p className="text-neutral-gray-700 dark:text-neutral-gray-300 leading-relaxed mb-6">
                         Rocket Global ra đời từ tình yêu vô tận với hai thứ: cà phê hảo hạng và sự tĩnh lặng của đại dương. Chúng tôi mong muốn tạo ra một không gian nơi mọi người có thể tạm gác lại những bộn bề của cuộc sống và tìm thấy một chút bình yên.
                     </p>
                     <Link to="/about">
@@ -164,35 +164,35 @@ const HomePage: React.FC = () => {
         
         {/* Testimonials Section */}
         <section>
-          <h2 className="text-3xl font-bold text-center mb-10 text-coffee-brown-900 dark:text-coffee-brown-100 animate-fade-in-up">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 text-neutral-gray-900 dark:text-neutral-gray-100 animate-fade-in-up">Khách Hàng Nói Gì Về Chúng Tôi</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="bg-white dark:bg-coffee-brown-900 p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300 animate-scale-in"
+                className="bg-white dark:bg-neutral-gray-900 p-6 rounded-lg shadow-lg flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300 animate-scale-in"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <img src={testimonial.avatar} alt={testimonial.name} className="w-20 h-20 rounded-full mb-4 border-4 border-ocean-blue-200" />
-                <Quote className="text-ocean-blue-300 dark:text-ocean-blue-700 mb-4" size={32} />
-                <p className="text-coffee-brown-700 dark:text-coffee-brown-300 italic mb-4 flex-grow">"{testimonial.quote}"</p>
+                <img src={testimonial.avatar} alt={testimonial.name} className="w-20 h-20 rounded-full mb-4 border-4 border-sunset-orange-200" />
+                <Quote className="text-sunset-orange-300 dark:text-sunset-orange-700 mb-4" size={32} />
+                <p className="text-neutral-gray-700 dark:text-neutral-gray-300 italic mb-4 flex-grow">"{testimonial.quote}"</p>
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={16} className={i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-600'} fill={i < testimonial.rating ? 'currentColor' : 'none'} />
                   ))}
                 </div>
-                <h4 className="font-bold text-coffee-brown-900 dark:text-coffee-brown-100">{testimonial.name}</h4>
+                <h4 className="font-bold text-neutral-gray-900 dark:text-neutral-gray-100">{testimonial.name}</h4>
               </div>
             ))}
           </div>
         </section>
 
         {/* Visit Us Section */}
-        <section className="bg-white dark:bg-coffee-brown-900 p-8 md:p-12 rounded-lg shadow-md">
+        <section className="bg-white dark:bg-neutral-gray-900 p-8 md:p-12 rounded-lg shadow-md">
           <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                  <h2 className="text-3xl font-bold mb-4 text-coffee-brown-900 dark:text-coffee-brown-100">Ghé Thăm Chúng Tôi</h2>
-                  <div className="flex items-start gap-4 text-coffee-brown-700 dark:text-coffee-brown-300 mb-6">
-                      <MapPin size={24} className="text-ocean-blue-600 dark:text-ocean-blue-400 mt-1 flex-shrink-0" />
+                  <h2 className="text-3xl font-bold mb-4 text-neutral-gray-900 dark:text-neutral-gray-100">Ghé Thăm Chúng Tôi</h2>
+                  <div className="flex items-start gap-4 text-neutral-gray-700 dark:text-neutral-gray-300 mb-6">
+                      <MapPin size={24} className="text-sunset-orange-600 dark:text-sunset-orange-400 mt-1 flex-shrink-0" />
                       <p className="leading-relaxed">
                           <strong>Địa chỉ:</strong> 123 Bờ Biển, TP. Đại Dương
                           <br />

@@ -17,7 +17,7 @@ const MenuPage: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center mb-8 text-coffee-brown-900 dark:text-coffee-brown-100">Thực Đơn Của Chúng Tôi</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 text-neutral-gray-900 dark:text-neutral-gray-100">Thực Đơn Của Chúng Tôi</h1>
       
       {/* Category Filters */}
       <div className="flex justify-center gap-2 md:gap-4 mb-8 flex-wrap">
@@ -27,8 +27,8 @@ const MenuPage: React.FC = () => {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-full font-semibold transition-colors duration-300 ${
               selectedCategory === category
-                ? 'bg-ocean-blue-600 text-white shadow-md'
-                : 'bg-white dark:bg-coffee-brown-800 text-coffee-brown-800 dark:text-coffee-brown-200 hover:bg-ocean-blue-100 dark:hover:bg-coffee-brown-700'
+                ? 'bg-sunset-orange-600 text-white shadow-md'
+                : 'bg-white dark:bg-neutral-gray-800 text-neutral-gray-800 dark:text-neutral-gray-200 hover:bg-sunset-orange-100 dark:hover:bg-neutral-gray-700'
             }`}
           >
             {category}

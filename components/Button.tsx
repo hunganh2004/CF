@@ -11,8 +11,8 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', size = '
   const baseStyles = 'font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variantStyles = {
-    primary: 'bg-ocean-blue-600 text-white hover:bg-ocean-blue-700 focus:ring-ocean-blue-500',
-    secondary: 'bg-coffee-brown-200 text-coffee-brown-900 hover:bg-coffee-brown-300 focus:ring-coffee-brown-500',
+    primary: 'bg-sunset-orange-600 text-white hover:bg-sunset-orange-700 focus:ring-sunset-orange-500',
+    secondary: 'bg-neutral-gray-200 text-neutral-gray-800 hover:bg-neutral-gray-300 focus:ring-neutral-gray-500 dark:bg-neutral-gray-700 dark:text-neutral-gray-100 dark:hover:bg-neutral-gray-600',
     danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
   };
 
